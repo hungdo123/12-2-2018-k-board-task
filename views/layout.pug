@@ -2,12 +2,19 @@ doctype html
 html
 	head
 		title #{title} - FullStack Vietnam
+
 		link(rel='stylesheet', href='/css/style.css')
 	body
+		header
+			nav.navbar.navbar-light.bg-light.justify-content-between
+				a.navbar-brand 
+					img(src="./img/logo.png", alt="",width="100px",height="50px") 
+				form.form-inline
+					input.form-control.mr-sm-2(type="search" placeholder="Tim Kiem" aria-label="Search")
 		main 
-			.container.mt-3
+			.container-fluid
 				.row
-					.col-sm-3
+					.col-sm-2
 						.list-group
 							a.list-group-item.list-group-item-action(href="/") Index
 							a.list-group-item.list-group-item-action(href="/about") About
